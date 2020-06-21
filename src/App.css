@@ -1,0 +1,84 @@
+.App{
+  display: flex;
+}
+
+.workspace-sidebar{
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  padding:1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.workspace{
+  display: flex;
+  margin: 2rem;
+  border: 1px solid;
+  flex-grow: 1;
+}
+
+.channel-sidebar{
+  border-right:1px solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.channel{
+  display: flex;
+  flex-grow: 1;
+  margin: 2rem;
+  border: 1px solid;
+}
+
+.chatroom{
+  flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-sidebar{
+  display: flex;
+  flex-direction: column;
+  border-left:1px solid;
+  padding:8px;
+}
+
+.chat-sidebar .material-icons{
+  padding: 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.chat-sidebar .material-icons:hover{
+  background-color: #f7f7f7;
+}
+
+.lobby{
+  margin-left: 2rem;
+  padding:0 1rem;
+}
+
+.lobby-workspace-item{
+  padding:1rem;
+  border: 1px solid;
+  margin: 2rem;
+}
+
+.workspace-title-container{
+  display: flex;
+  border-bottom: 1px solid;
+  justify-content: space-between;
+}
+
+.workspace-sidebar-item{
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid;
+  text-decoration: none;
+  color: inherit;
+}
+
+.chatroom-title{
+  border-bottom: 1px solid;
+}

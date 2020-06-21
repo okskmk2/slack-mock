@@ -1,0 +1,42 @@
+{
+    "users": [
+        {
+            "id": "okskmk2",
+            "name": "eunsung.lee"
+        }
+    ],
+    "workspaces": [
+        {
+            "id": 1,
+            "name": "testspace",
+            "channels": [
+                {
+                    "id": 1,
+                    "name": "general",
+                    "manager": "okskmk2",
+                    "members": [
+                        "okskmk2",
+                        "leh"
+                    ],
+                    "messages":[
+                        {
+                            "id":1,
+                            "reg_dt":"2020-10-30 10:20",
+                            "message_type":"text",
+                            "message":"hi",
+                            "talker":"okskmk2"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "testchannel",
+                    "manager": "leh",
+                    "members": [
+                        "leh"
+                    ]
+                }
+            ]
+        }
+    ]
+}
