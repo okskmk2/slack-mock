@@ -9,14 +9,15 @@ const ChannelSidebar = () => {
                 <div>workspaceId : {workspaceId}</div>
                 <i className="material-icons">more_vert</i>
             </div>
-            <div>
-                <button>Create Channel</button>
-            </div>
             {
                 [1, 2, 3, 4, 5].map(v => (
-                    <Link to={`/workspaces/${workspaceId}/channels/${v}`} key={v}>channel {`${v}`}</Link>
+                    <Link to={`/workspaces/${workspaceId}/channels/${v}`} key={v} className='channel-sidebar-item'>channel {`${v}`}</Link>
                 ))
             }
+            <div>
+                <button>Create Channel</button>
+                <button>App Directory</button>
+            </div>
         </div>
     )
 }

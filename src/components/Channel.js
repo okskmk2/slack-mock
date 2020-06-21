@@ -10,8 +10,12 @@ const Channel = () => {
                 <div className='chatroom-title'>
                 <h3>channel : {channelId}</h3>
                 </div>
-                <div>
-                    <input/>
+                <div className='chatroom-input-container'>
+                    <div className='chatroom-icons-left'>
+                        <i className="material-icons">add</i>
+                        <i className="material-icons">crop_square</i>
+                    </div>
+                    <input className='chatroom-input'/>
                 </div>
             </div>
             <ChatSidebar />

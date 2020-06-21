@@ -1,77 +1,78 @@
-.App{
+.App {
   display: flex;
 }
 
-.workspace-sidebar{
+.workspace-sidebar {
   display: flex;
   flex-direction: column;
-  background-color: #f7f7f7;
-  padding:1rem;
+  /* background-color: #f7f7f7; */
+  padding: 1rem;
   min-height: 100vh;
   box-sizing: border-box;
+  border-right: 1px solid;
 }
 
-.workspace{
+.workspace {
   display: flex;
   margin: 2rem;
   border: 1px solid;
   flex-grow: 1;
 }
 
-.channel-sidebar{
-  border-right:1px solid;
+.channel-sidebar {
+  border-right: 1px solid;
   display: flex;
   flex-direction: column;
 }
 
-.channel{
+.channel {
   display: flex;
   flex-grow: 1;
   margin: 2rem;
   border: 1px solid;
 }
 
-.chatroom{
+.chatroom {
   flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.chat-sidebar{
   display: flex;
   flex-direction: column;
-  border-left:1px solid;
-  padding:8px;
+  justify-content: space-between;
 }
 
-.chat-sidebar .material-icons{
+.chat-sidebar {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid;
+  padding: 8px;
+}
+
+.chat-sidebar .material-icons {
   padding: 4px;
   margin-bottom: 8px;
   cursor: pointer;
 }
-.chat-sidebar .material-icons:hover{
+.chat-sidebar .material-icons:hover {
   background-color: #f7f7f7;
 }
 
-.lobby{
+.lobby {
   margin-left: 2rem;
-  padding:0 1rem;
+  padding: 0 1rem;
 }
 
-.lobby-workspace-item{
-  padding:1rem;
+.lobby-workspace-item {
+  padding: 1rem;
   border: 1px solid;
   margin: 2rem;
 }
 
-.workspace-title-container{
+.workspace-title-container {
   display: flex;
   border-bottom: 1px solid;
   justify-content: space-between;
 }
 
-.workspace-sidebar-item{
+.workspace-sidebar-item {
   padding: 8px;
   margin-bottom: 8px;
   border: 1px solid;
@@ -79,6 +80,36 @@
   color: inherit;
 }
 
-.chatroom-title{
+.workspace-sidebar-item:hover {
+  background-color: #f7f7f7;
+}
+
+.chatroom-title {
   border-bottom: 1px solid;
+}
+
+.channel-sidebar-item {
+  padding: 8px;
+  border-bottom: 1px solid;
+  text-decoration: none;
+  color: inherit;
+}
+.channel-sidebar-item:hover {
+  background-color: #f7f7f7;
+}
+.chatroom-input-container {
+  display: flex;
+  position: relative;
+}
+.chatroom-input {
+  font-size: 16px;
+  margin: 16px;
+  width: 100%;
+  padding: 8px 8px 8px 4rem;
+}
+
+.chatroom-icons-left {
+  position: absolute;
+  top: 22px;
+  left: 24px;
 }
