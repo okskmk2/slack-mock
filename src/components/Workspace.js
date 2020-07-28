@@ -1,18 +1,18 @@
-import React from 'react'
-import { Route, Switch, Redirect } from 'react-router-dom'
-import Channel from './Channel'
-import ChannelSidebar from './ChannelSidebar'
+import React from "react";
+import Channel from "./Channel";
+import Workspacebar from "./Workspacebar";
+import { Route } from "react-router";
 
 const Workspace = () => {
-    return (
-        <div className='workspace'>
-            <ChannelSidebar />
-            <Switch>
-                <Route path="/workspaces/:workspaceId/channels/:channelId" component={Channel} />
-                <Redirect to="/workspaces/:workspaceId/channels/1"/>
-            </Switch>
-        </div>
-    )
-}
+  return (
+    <div className="workspace">
+      <Workspacebar />
+      <Route
+        to="/workspace/:workspaceId/channel:/channelId"
+        component={Channel}
+      />
+    </div>
+  );
+};
 
-export default Workspace
+export default Workspace;

@@ -1,34 +1,34 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
 
 const Lobby = () => {
-    return (
-        <div className='lobby'>
-           <h1>Lobby</h1>
-           <button>Add Workspace</button>
-           <div>
-           {
-                [
-                    {
-                        id: 1,
-                        title: 'External'
-                    },
-                    {
-                        id: 2,
-                        title: 'User'
-                    },
-                    {
-                        id: 3,
-                        title: 'VScode'
-                    }
-                ].map(v=>(
-                    <Link to={`/workspaces/${v.id}`} key={v.id}>
-                        <div className='lobby-workspace-item'>{v.title}</div></Link>
-                ))
-            }
-           </div>
+  return (
+    <div className="lobby">
+      <div className="mentionbar">
+        <header>mention title</header>
+        <ul>
+          <li>mention content</li>
+          <li>mention content</li>
+          <li>mention content</li>
+          <li>mention content</li>
+        </ul>
+      </div>
+      <div className="workspaces">
+        <div>workspace</div>
+        <div>
+          <button className="material-icons">add</button>
+          <button className="material-icons">turned_in</button>
+          <button className="material-icons">list</button>
         </div>
-    )
-}
+        <ul>
+          <li>workspace name</li>
+          <li>workspace name</li>
+          <li>workspace name</li>
+          <li>workspace name</li>
+          <li>workspace name</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
-export default Lobby
+export default Lobby;
